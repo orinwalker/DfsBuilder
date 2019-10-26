@@ -1,0 +1,15 @@
+<div>
+    <table *ngFor="let player of players" cellspacing="0" width="100%">
+   
+    <tr>
+        <td>{{player.playerPosition}}</td>
+        <td><strong>{{player.playerName}}</strong></td>
+        <td>{{player.playerGameDate | date:'E @ h a' | lowercase }}</td>
+        <td>{{player.playerAwayTeam}} @ {{player.playerHomeTeam}}</td>
+        <td>$<strong>{{player.playerPrice}}</strong></td>
+        <td>FFPG: {{player.playerFFPG}}</td>
+        <td>OPRK: {{player.playerOPRK}}</td>
+    </tr>
+    
+</table>
+</div>

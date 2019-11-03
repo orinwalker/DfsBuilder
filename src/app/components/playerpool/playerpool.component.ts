@@ -73,7 +73,7 @@ getPlayers(): void {
    // characters: Character[] = [
     const players = [
     {
-      playerName: 'Player 1',
+      playerName: 'Aaron Rogers',
       playerPrice: 1000,
       playerPool: 123,
       playerPosition: 'QB',
@@ -84,45 +84,45 @@ getPlayers(): void {
       playerOPRK: '11'
     },
     {
-      playerName: 'Player 2',
+      playerName: 'Joe Flacco',
       playerPrice: 2000,
       playerPool: 123,
       playerPosition: 'QB',
       playerGameDate: new Date(2019, 10, 10, 13, 0, 0, 0 ),
-      playerAwayTeam: 'GB',
-      playerHomeTeam: 'DAL',
+      playerAwayTeam: 'DEN',
+      playerHomeTeam: 'ATL',
       playerFFPG: '30.0',
       playerOPRK: '11'
     },
     {
-      playerName: 'Player 3',
+      playerName: 'Sam Darnold',
       playerPrice: 3000,
       playerPool: 123,
       playerPosition: 'QB',
       playerGameDate: new Date(2019, 10, 10, 13, 0, 0, 0 ),
-      playerAwayTeam: 'GB',
-      playerHomeTeam: 'DAL',
+      playerAwayTeam: 'NYJ',
+      playerHomeTeam: 'NYG',
       playerFFPG: '30.0',
       playerOPRK: '11'
     },
     {
-      playerName: 'Player 4',
+      playerName: 'Sam Darnold',
       playerPrice: 4000,
       playerPool: 123,
       playerPosition: 'QB',
       playerGameDate: new Date(2019, 10, 10, 13, 0, 0, 0 ),
-      playerAwayTeam: 'GB',
-      playerHomeTeam: 'DAL',
+      playerAwayTeam: 'Jets',
+      playerHomeTeam: 'Giants',
       playerFFPG: '30.0',
       playerOPRK: '11'
     },
     {
-      playerName: 'Player 5',
+      playerName: 'Russell Wilson',
       playerPrice: 5000,
       playerPool: 123,
       playerPosition: 'QB',
       playerGameDate: new Date(2019, 10, 10, 13, 0, 0, 0 ),
-      playerAwayTeam: 'GB',
+      playerAwayTeam: 'Falcons',
       playerHomeTeam: 'DAL',
       playerFFPG: '30.0',
       playerOPRK: '11'

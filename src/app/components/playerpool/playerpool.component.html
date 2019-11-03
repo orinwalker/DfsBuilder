@@ -1,5 +1,5 @@
 <div>
-    <table *ngFor="let player of players" cellspacing="0" width="100%">
+    <!-- <table *ngFor="let player of players" cellspacing="0" width="100%">
    
     <tr>
         <td>{{player.playerPosition}}</td>
@@ -11,5 +11,30 @@
         <td>OPRK: {{player.playerOPRK}}</td>
     </tr>
     
-</table>
+</table> -->
+
+<mat-card *ngFor="let player of players" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{player.playerPosition}}: {{player.playerName}}</mat-card-title>
+      <mat-card-subtitle>{{player.playerGameDate | date:'E @ h a' | uppercase }} | {{player.playerAwayTeam}} @ {{player.playerHomeTeam}}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+            <table cellspacing="0" width="100%">
+   
+                    <tr>
+                        <td>COST:$<strong>{{player.playerPrice}}</strong></td>
+                        <td>FFPG: {{player.playerFFPG}}</td>
+                        <td>OPRK: {{player.playerOPRK}}</td>
+                    </tr>
+                    
+                </table>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+
 </div>

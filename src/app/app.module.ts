@@ -9,7 +9,9 @@ import { LobbyComponent } from './components/lobby/lobby.component';
 import { ContestComponent } from './components/contest/contest.component';
 import { UserlineupComponent } from './components/userlineup/userlineup.component';
 import { UserComponent } from './components/user/user.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +20,14 @@ import { UserComponent } from './components/user/user.component';
     LobbyComponent,
     ContestComponent,
     UserlineupComponent,
-    UserComponent
+    UserComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
